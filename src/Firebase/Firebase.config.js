@@ -1,9 +1,9 @@
 const firebaseConfig = {
-  apiKey: "AIzaSyCeQqoZ2WGxlhVV6atPsEPBPfOa5UqSu2Y",
-  authDomain: "gamix-pro.firebaseapp.com",
-  projectId: "gamix-pro",
-  storageBucket: "gamix-pro.appspot.com",
-  messagingSenderId: "249842563595",
-  appId: "1:249842563595:web:70983b2e97dab06430e50e"
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID
 };
 export default firebaseConfig;
