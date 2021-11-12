@@ -16,7 +16,7 @@ const MyOrder = () => {
         fetch(`http://localhost:8888/order?email=${users.email}`)
         .then(res=>res.json())
         .then(data=>setOrder(data))
-    },[])
+    },[users.email])
     
     const handleDelete = id =>{
         fetch(`http://localhost:8888/order/${id}`,{

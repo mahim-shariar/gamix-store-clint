@@ -1,4 +1,4 @@
-import { Alert, CircularProgress, Grid, Paper, TextField, Typography } from '@mui/material';
+import { Alert, Grid, Paper, TextField, Typography } from '@mui/material';
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
@@ -14,7 +14,7 @@ const Order = () => {
         fetch(`http://localhost:8888/games/${id}`)
             .then(res => res.json())
             .then(data => setGame(data))
-    }, [])
+    }, [id])
     const handleOnBlur = e => {
         const field = e.target.name;
         const value = e.target.value;

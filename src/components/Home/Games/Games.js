@@ -10,7 +10,7 @@ const Games = () => {
         fetch(`http://localhost:8888/games?size=${size}`)
             .then(res => res.json())
             .then(data => setGames(data))
-    }, [])
+    },[size])
     return (
         <div className=" bg-img1 " >
             <Typography variant='h2' sx={{marginY:5}} className='text-light text-center' >

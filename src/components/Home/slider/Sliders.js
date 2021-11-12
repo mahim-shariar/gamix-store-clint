@@ -1,7 +1,6 @@
 import { Carousel } from 'react-bootstrap';
 import React from 'react';
 import './Sliders.css'
-import Navbar from '../header/Header';
 import { Button } from '@mui/material';
 import { NavLink } from 'react-router-dom';
 
