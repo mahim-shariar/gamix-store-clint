@@ -15,6 +15,7 @@ import PrivateRoute from './components/PrivetRoute/PrivateRoute';
 import Drawers from './components/DashBoard/Drawers/Drawers';
 import Order from './components/Review/Review/Orders';
 import Footer from './components/Footer/Footer';
+import NotFounts from './components/NotFount/NotFounts';
 // import Drawers from './components/Dashbord/Drower/Drawers';
 
 function App() {
@@ -47,6 +48,9 @@ function App() {
           <PrivateRoute path='/dashboard'>
             <Drawers></Drawers>
           </PrivateRoute>
+          <Route exact path='*'>
+            <NotFounts></NotFounts>
+          </Route>
         </Switch>
         <Footer></Footer>
       </Router>

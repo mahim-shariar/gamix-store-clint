@@ -22,7 +22,7 @@ const GameReview = () => {
             name: users.displayName,
             email: users.email
         }
-        fetch('http://localhost:8888/review', {
+        fetch('https://rocky-depths-49949.herokuapp.com/review', {
             method: "POST",
             headers: {
                 'content-type': 'application/json'

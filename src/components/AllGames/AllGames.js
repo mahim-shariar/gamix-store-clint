@@ -5,7 +5,7 @@ import './AllGames.css'
 const AllGames = () => {
     let [games, setGames] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:8888/games')
+        fetch('https://rocky-depths-49949.herokuapp.com/games')
             .then(res => res.json())
             .then(data => setGames(data))
     }, [])

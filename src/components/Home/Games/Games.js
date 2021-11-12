@@ -7,7 +7,7 @@ const Games = () => {
     let [games, setGames] = useState([]);
     let size = 6;
     useEffect(() => {
-        fetch(`http://localhost:8888/games?size=${size}`)
+        fetch(`https://rocky-depths-49949.herokuapp.com/games?size=${size}`)
             .then(res => res.json())
             .then(data => setGames(data))
     },[size])

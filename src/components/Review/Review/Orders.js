@@ -11,7 +11,7 @@ const Order = () => {
     let [bookingSuc, setBookingSuc] = useState(false)
     let { id } = useParams()
     useEffect(() => {
-        fetch(`http://localhost:8888/games/${id}`)
+        fetch(`https://rocky-depths-49949.herokuapp.com/games/${id}`)
             .then(res => res.json())
             .then(data => setGame(data))
     }, [id])
@@ -29,7 +29,7 @@ const Order = () => {
             price: game.price,
             email: users.email
         }
-        fetch('http://localhost:8888/order', {
+        fetch('https://rocky-depths-49949.herokuapp.com/order', {
             method: "POST",
             headers: {
                 'content-type': 'application/json'

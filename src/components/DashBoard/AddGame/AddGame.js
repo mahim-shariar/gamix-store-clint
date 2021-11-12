@@ -12,7 +12,7 @@ const AddGame = () => {
         setAddGame(newGameData);
     }
     let handleAddGame = e => {
-        fetch('http://localhost:8888/games', {
+        fetch('https://rocky-depths-49949.herokuapp.com/games', {
             method: "POST",
             headers: {
                 'content-type': 'application/json'
